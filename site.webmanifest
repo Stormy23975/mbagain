@@ -3,13 +3,13 @@
   "short_name": "Meridian",
   "icons": [
     {
-      "src": "favicon-192x192.png",
+      "src": "https://stormy23975.github.io/mbagain/favicon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "favicon-512x512.png",
+      "src": "https://stormy23975.github.io/mbagain/favicon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
