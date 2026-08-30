@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/************************** IMPORT VARIABLES **************************/
+/* Add White Transparent Colors */
+/* Add Black Transparent Colors */
+/************************** HAMBURGER **************************/
+.hamburger-button {
+  background: none;
+  border: none;
+  color: lab(27% 0 0);
+  cursor: pointer;
+  font-family: Verdana;
+  font-size: 2rem;
+}
+
+.hamburger-button::before {
+  content: "☰";
+}
+
+.hamburger-button.open::before {
+  content: "×";
+}
+
+/************************** NAVIGATION **************************/
+.site-nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: Verdana;
+  background-color: lab(98% 0 0);
+  display: none;
+}
+
+.site-nav.open {
+  display: block;
+}
+
+.site-nav a {
+  display: block;
+  text-decoration: none;
+  color: lab(15% 0 0);
+  padding: 0.75rem xxx;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-bottom: 1px solid lab(91% 0 0);
+  transition: background-color 0.3s ease;
+}
+.site-nav a:hover {
+  background-color: lab(15% 0 0);
+  color: lab(97% 0 0);
+}
+
+.active > a {
+  color: #d50000;
+}
+
+/************************** IMPORT VARIABLES **************************/
+/************************** MEDIA QUERY STARTS HERE **************************/
+@media only screen and (min-width: xxx) {
+  /************************** HAMBURGER **************************/
+  .hamburger-button {
+    display: none;
+  }
+  /************************** NAVIGATION **************************/
+  .site-nav,
+  .site-nav.open {
+    display: flex;
+    padding-left: xxx;
+  }
+  .site-nav li a {
+    font-size: 0.7rem;
+    border: none;
+  }
+}
+/************************** IMPORT VARIABLES **************************/
+/************************** BORDER BOX **************************/
+* {
+  box-sizing: border-box;
+}
+
+/************************** BODY **************************/
+body {
+  font-family: xxx;
+  margin: 0;
+  padding: 0;
+}
+
+/************************** HEADER **************************/
+header {
+  padding: xxx 0 xxx xxx;
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  column-gap: 8px;
+  align-items: end;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+}
+header span {
+  font-size: 1.2rem;
+  color: lab(15% 0 0);
+}
+
+/************************** MAIN LAYOUT **************************/
+h1 {
+  font-size: 1.5rem;
+  color: lab(34% 0 0);
+  font-weight: xxx;
+  margin-left: xxx;
+}
+
+/************************** SOCIAL MEDIA **************************/
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  margin-bottom: 1rem;
+}
+.social img {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+.social a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: background-color 0.3s ease-in-out;
+}
+.social a:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/************************** FOOTER **************************/
+footer {
+  background-color: lab(15% 0 0);
+  color: lab(98% 0 0);
+  text-align: center;
+  padding: 1rem 0;
+}
+footer p {
+  margin: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+/************************** IMPORT VARIABLES **************************/
+@media only screen and (min-width: xxx) {
+  header,
+  main,
+  nav,
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=styles.css.map */
